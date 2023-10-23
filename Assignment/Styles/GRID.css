@@ -1,0 +1,23 @@
+.item1 { grid-area: header; }
+    .item3 { grid-area: main; height: 20rem;}
+    .item4 { grid-area: sidebar; height: 20rem;}
+    .item5 { grid-area: footer; }
+    
+    .grid-container {
+      display: grid;
+      grid-template-areas:
+        'header header header header header'
+        'sidebar main main main main'
+        'footer footer footer footer footer';
+      gap: 2px;
+      background-color: #000000;
+      padding: 2px;
+      width: 800px;
+    }
+    
+    .grid-container > div {
+      background-color: #f1f0f0ee;
+      text-align: center;
+      padding: 20px 0;
+      font-size: 30px;
+    }
